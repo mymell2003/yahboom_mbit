@@ -318,13 +318,13 @@ namespace mbit_輸入類 {
         let z = pins.digitalReadPin(pin3);
         let now_state = enRocker.Nostate;
 
-        if (x < 100) // 上
+        if (x < 100) //上
         {
 
             now_state = enRocker.Up;
 
         }
-        else if (x > 700) //
+        else if (x > 700) //下
         {
 
             now_state = enRocker.Down;
@@ -378,7 +378,7 @@ namespace mbit_音樂類 {
         //% blockId="NoBeep" block="不響"
         NoBeep = 0,
         //% blockId="Beep" block="響"
-        Beep
+        Beep = 1
     }
 
     //% blockId=mbit_Buzzer block="Buzzer|pin %pin|value %value"
